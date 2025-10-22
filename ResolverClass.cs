@@ -14,11 +14,11 @@ public class ResolverClass : IFileResolver
         string others = "";
         if (path.ToLower().EndsWith(".svg"))
         {
-            others = "data:image/png;base64,";
+            others = "data:image/svg+xml;base64,";
         }
         else if (path.ToLower().EndsWith(".png"))
         {
-            others = "data:image/svg+xml;base64,";
+            others = "data:image/png;base64,";
         }
         else
         {
